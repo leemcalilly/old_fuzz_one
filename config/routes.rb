@@ -58,4 +58,7 @@ Originalfuzzmarketing::Application.routes.draw do
   
   match 'index' => "public#home"
   root to: 'public#home'
+  
+  get 'public(/:action)', controller: 'public'
+  get ':action', controller: 'public'
 end
