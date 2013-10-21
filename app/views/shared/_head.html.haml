@@ -1,0 +1,13 @@
+!!!5
+%html
+  %head
+    / Set the viewport width to device width for mobile
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title= content_for?(:title) ? yield(:title) : "Original Fuzz"
+    %meta{:description => content_for?(:metaDesc) ? yield(:metaDesc) : "Original Fuzz makes The Fuzz Bag, The Fuzz Strap and The Fuzz Cable. We’re guitar players, and we design quality guitar accessories that we want to use."}
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    /[if lt IE 9]
+      %script{:src => "https://html5shim.googlecode.com/svn/trunk/html5.js"}/
