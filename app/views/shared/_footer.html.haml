@@ -1,3 +1,26 @@
 %footer
   .container
-    Original Fuzz makes quality guitar accessories. Copyright © 2013 Original Fuzz.
+    .footer-about
+      = image_tag "logo-footer.svg", alt: "Original Fuzz"
+      %p Original Fuzz makes quality guitar accessories. We bring quality design and craftsmanship to the gear guitar players depend on.
+      %p Copyright © 2013 Original Fuzz.
+    .footer-products
+      %h4 Our Products
+      %ul
+        %li= link_to "Peruvian Straps", "/products/peruvianstraps"
+        %li= link_to "Fuzz Straps", "/products/fuzzstraps"
+        %li= link_to "Cables", "/products/cables"
+        %li= link_to "Fuzz Bag", "/products/fuzzbag"
+    .footer-company
+      %h4 Our Company
+      %ul
+        %li= link_to "About", "/about"
+        %li= link_to "Contact", "/contact"
+        %li= link_to "Where To Find Us", "/where-to-find-us"
+    .footer-social
+      %h4 Follow Us
+      %ul.social
+        %li= link_to "Facebook", "#"
+        %li= link_to "Twitter", "#"
+        %li= link_to "Spotify", "#"
+        %li= link_to "Soundcloud", "#"
