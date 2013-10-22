@@ -9,14 +9,37 @@ $font-size-base: 16px
 $headings-font-family: $font-headline
 $headings-font-weight: 700
 
+$brand-primary: #d15a47
+$text-color: #4b4b4b
+
+$navbar-default-bg: #ece7d3
+$navbar-height: 65px
+
+$dropdown-bg: #555
+$dropdown-link-color: #fff
+
 @import "bootstrap"
 
 body
-  padding-top: 50px
+  padding-top: 64px
   background: #555
 
 header
-  background: #fff
+  a
+    font-family: $font-headline
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 12px
+    letter-spacing: 1px
+  .navbar-brand
+    position: relative
+    width: 143px
+  .navbar-brand img
+    margin-top: 5px
+    margin-right: 20px
+    width: 123px
+    position: absolute
+    top: 0px
 
 section.page-picture
   img
@@ -29,3 +52,14 @@ section.page-picture
 footer
   padding: 20px 0
   color: #777
+
+// headings
+h1
+  text-transform: uppercase
+
+// buttons
+.btn
+  text-transform: uppercase
+  font-family:  $font-headline
+  font-weight: 700
+  font-size: 80%

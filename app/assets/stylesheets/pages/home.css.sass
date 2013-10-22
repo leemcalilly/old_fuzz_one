@@ -1,22 +1,30 @@
 section.brand-feature
+  padding: 320px 0
   width: 100%
   position: relative
   text-align: center
   color: #fff
-  img
-    width: 100%
+  background: url(temp-brand.jpg) no-repeat
+  background-size: cover
+  h1
+    padding: 0 20px
+  p
+    font-size: 140%
 .brand-title
   @include make-xs-column(12)
-  position: absolute
-  bottom: 50%
+
+section.brand-statement
+  @include make-row
+  padding: 40px 0
+  background: #fff
+  p
+    @include make-xs-column(12)
+    @include make-sm-column(6)
 
 section.product-feature
+  @include make-row
+  background: #fff
   width: 100%
-  position: relative
   text-align: center
-  img
-    width: 100%
 .product-feature-title
   @include make-xs-column(12)
-  position: absolute
-  bottom: 20%
