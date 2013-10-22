@@ -1,6 +1,6 @@
 // Variables
 $font-headline: "brandon-grotesque", "Helvetica", Arial, sans-serif
-$font-body: "futura-pt", "Helvetica", Arial, sans-serif
+$font-body: "ff-meta-web-pro", "Helvetica", Arial, sans-serif
 
 // Boostrap Overrides
 $font-family-sans-serif: $font-body
@@ -14,6 +14,9 @@ $text-color: #4b4b4b
 
 $navbar-default-bg: #ece7d3
 $navbar-height: 65px
+$navbar-default-toggle-hover-bg: darken($navbar-default-bg, 10%)
+$navbar-default-toggle-icon-bar-bg: darken($navbar-default-bg, 20%)
+$navbar-default-toggle-border-color: darken($navbar-default-bg, 20%)
 
 $dropdown-bg: #555
 $dropdown-link-color: #fff
@@ -33,7 +36,7 @@ header
     letter-spacing: 1px
   .navbar-brand
     position: relative
-    width: 143px
+    width: 153px
   .navbar-brand img
     margin-top: 5px
     margin-right: 20px
@@ -46,15 +49,17 @@ section.page-picture
     width: 100%
 
 .main
-  padding: 40px 0
+  padding-top: 60px
+  padding-bottom: 60px
   background: #fff
 
 footer
-  padding: 20px 0
+  padding-top: 40px
+  padding-bottom: 40px
   color: #777
 
 // headings
-h1
+h1, h2
   text-transform: uppercase
 
 // buttons

@@ -1,32 +1,31 @@
 - content_for :title, "Contact Original Fuzz"
 
-%section.page-picture
-  %section.main
-    .container
-      .contact
-        .contact-main
-          %h1 Contact Us
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          
-          %h3 Mailing Address
-          %address
-            %p
-              Original Fuzz
-              %br
-              1234 Street
-              %br
-              Jacksonville, FL 32258     
-          %dl
-            %dt Email
-            %dd= mail_to "email@email.com"
-          %dl
-            %dt Phone
-            %dd 904 123 4567
+%section.main
+  .container
+    .contact
+      .contact-main
+        %h1 Contact Us
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         
-        %aside.contact-sidebar
-          %h3 Follow Us
-          %ul.social-buttons
-            %li=link_to "Facebook", "#"
-            %li=link_to "Twitter", "#"
-            %li=link_to "Spotify", "#"
+        %h3 Mailing Address
+        %address
+          %p
+            Original Fuzz
+            %br
+            1234 Street
+            %br
+            Jacksonville, FL 32258     
+        %dl
+          %dt Email
+          %dd= mail_to "email@email.com"
+        %dl
+          %dt Phone
+          %dd 904 123 4567
+      
+      %aside.contact-sidebar
+        %h3 Follow Us
+        %ul.social-buttons
+          %li=link_to "Facebook", "#"
+          %li=link_to "Twitter", "#"
+          %li=link_to "Spotify", "#"
       
