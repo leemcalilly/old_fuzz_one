@@ -13,4 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require glide.min
 //= require_tree .
+
+$(document).ready(function(){
+  $('.slider').glide({
+    autoplay: false,
+    arrows: true,
+    arrowRightText: "→",
+    arrowLeftText: "←"
+  });
+});

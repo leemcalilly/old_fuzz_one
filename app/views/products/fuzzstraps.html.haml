@@ -8,7 +8,11 @@
       %p= link_to "Buy Now", "#", class: "btn btn-primary"
 
 %section.product-gallery
-  = image_tag "http://placehold.it/1000x400"
+  .slider
+    %ul.slides
+      %li.slide= image_tag "products/solid/1.jpg"
+      %li.slide= image_tag "products/solid/2.jpg"
+      %li.slide= image_tag "products/solid/3.jpg"
 
 %section.product-points
   .container
