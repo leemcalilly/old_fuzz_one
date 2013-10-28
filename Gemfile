@@ -8,7 +8,7 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg', '~> 0.15.1'
 
 
 # Gems used only for assets and not required
