@@ -33,12 +33,21 @@ section.brand-statement
       background: #fff
 
 section.product-feature
+  @include clearfix
   padding-top: 40px
   padding-bottom: 40px
-  background: #fff
+  background-size: cover
+  background-repeat: no-repeat
   text-align: center
-  @include clearfix
-  img
-    width: 100%
+  color: #fff
+  @media (min-width: $screen-sm)
+    padding-top: 90px
+    padding-bottom: 90px
 .product-feature-title
   @include make-xs-column(12)
+  @include make-sm-column(8)
+  @include make-sm-column-offset(2)
+  @include make-lg-column(6)
+  @include make-lg-column-offset(3)
+  p.action
+    margin-top: 20px

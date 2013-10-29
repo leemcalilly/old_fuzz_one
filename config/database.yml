@@ -3,16 +3,12 @@ development:
   encoding: unicode
   database: fuzz_development
   pool: 5
-  username: fuzz
-  password:
 
 test:
   adapter: postgresql
   encoding: unicode
   database: fuzz_test
   pool: 5
-  username: fuzz
-  password:
 
 production:
   adapter: postgresql
