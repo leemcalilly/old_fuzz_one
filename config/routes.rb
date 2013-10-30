@@ -62,5 +62,6 @@ Originalfuzzmarketing::Application.routes.draw do
   get 'public(/:action)', controller: 'public'
   get ':action', controller: 'public'
   
+  get 'bands(/:action)', controller: 'bands'
   get 'products(/:action)', controller: 'products'
 end
