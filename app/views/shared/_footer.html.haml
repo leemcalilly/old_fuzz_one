@@ -2,8 +2,8 @@
   .container
     .footer-about
       = image_tag "logo-footer.svg", alt: "Original Fuzz"
-      %p Better gear for guitar players. We bring quality design and craftsmanship to the accessories guitar players depend on.
-      %p Copyright © 2013 Original Fuzz.
+      %p Better gear for guitar players. We bring quality design and craftsmanship to the accessories guitar players depend on. All backed by a lifetime guarantee.
+      %p Copyright &copy; 2013 Original Fuzz.
     .footer-products
       %h4 Our Products
       %ul
@@ -14,10 +14,20 @@
     .footer-company
       %h4 Our Company
       %ul
-        %li= link_to "Help", "https://originalfuzz.zendesk.com/hc/en-us", :target => "_blank"
         %li= link_to "About", "/about"
         %li= link_to "Contact", "/contact"
         %li= link_to "Where To Find Us", "/where-to-find-us"
+      %h4 Customer Service
+      %ul
+        %li= link_to "Help", "https://originalfuzz.zendesk.com/hc/en-us", :target => "_blank"
+        %li= link_to "Submit a Request", "https://originalfuzz.zendesk.com/hc/en-us/requests/new", :target => "_blank"
+        %li= link_to "Give Us Feedback", "https://originalfuzz.wufoo.com/forms/give-us-feedback/", :target => "_blank"
+        %li= link_to "Lifetime Guarantee", "https://originalfuzz.zendesk.com/hc/en-us/articles/200745386-Our-Lifetime-Guarantee", :target => "_blank"
+        %li= link_to "Shipping & Returns", "https://originalfuzz.zendesk.com/hc/en-us/articles/200720747-Shipping-Returns", :target => "_blank"
+        %li= link_to "FAQ", "https://originalfuzz.zendesk.com/hc/en-us/sections/200197896-FAQ", :target => "_blank"
+        %li= link_to "Privacy Policy", "https://originalfuzz.zendesk.com/hc/en-us/articles/200723207-Privacy-Policy", :target => "_blank"
+        %li= link_to "Terms of Use", "https://originalfuzz.zendesk.com/hc/en-us/articles/200943443-Terms-of-Use", :target => "_blank"
+        
     .footer-social
       %h4 Follow Us
       %ul.social
@@ -26,3 +36,4 @@
         %li= link_to "Instagram", "http://instagram.com/originalfuzz"
         %li= link_to "Vimeo", "http://vimeo.com/originalfuzz"
         %li= link_to "Google+", "http://plus.google.com/101277587683541567500"
+        %li= link_to "Email", "http://eepurl.com/dGv12"
