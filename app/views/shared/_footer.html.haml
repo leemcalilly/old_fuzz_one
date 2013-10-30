@@ -3,7 +3,7 @@
     .footer-about
       = image_tag "logo-footer.svg", alt: "Original Fuzz"
       %p Better gear for guitar players. We bring quality design and craftsmanship to the accessories guitar players depend on. All backed by a lifetime guarantee.
-      %p Copyright &copy; 2013 Original Fuzz.
+      %p Copyright &copy; %span{ Time.now.year }  Original Fuzz.
     .footer-products
       %h4 Our Products
       %ul
@@ -22,7 +22,7 @@
         %li= link_to "Help", "https://originalfuzz.zendesk.com/hc/en-us", :target => "_blank"
         %li= link_to "Submit a Request", "https://originalfuzz.zendesk.com/hc/en-us/requests/new", :target => "_blank"
         %li= link_to "Give Us Feedback", "https://originalfuzz.wufoo.com/forms/give-us-feedback/", :target => "_blank"
-        %li= link_to "Lifetime Guarantee", "https://originalfuzz.zendesk.com/hc/en-us/articles/200745386-Our-Lifetime-Guarantee", :target => "_blank"
+        %li= link_to "Lifetime Guarantee", "https://originalfuzz.zendesk.com/hc/en-us/articles/200745386-Lifetime-Guarantee", :target => "_blank"
         %li= link_to "Shipping & Returns", "https://originalfuzz.zendesk.com/hc/en-us/articles/200720747-Shipping-Returns", :target => "_blank"
         %li= link_to "FAQ", "https://originalfuzz.zendesk.com/hc/en-us/sections/200197896-FAQ", :target => "_blank"
         %li= link_to "Privacy Policy", "https://originalfuzz.zendesk.com/hc/en-us/articles/200723207-Privacy-Policy", :target => "_blank"
