@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Originalfuzzmarketing::Application.config.secret_key_base = '6a3450f1d78d8fe23a9c8e89e524ffd4da7a6b9cbf66a667563055972e6711bfe7e6ec06a62008e25ac447e2537793f124ff9882afa333f0f5b6f78301ae1c4e'
+OriginalFuzz::Application.config.secret_key_base = '6a3450f1d78d8fe23a9c8e89e524ffd4da7a6b9cbf66a667563055972e6711bfe7e6ec06a62008e25ac447e2537793f124ff9882afa333f0f5b6f78301ae1c4e'
