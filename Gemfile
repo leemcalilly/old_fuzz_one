@@ -16,3 +16,5 @@ gem 'haml-rails', '~> 0.4'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 gem 'foreman', '~> 0.63.0'
 
+# Recommended for Heroku
+gem 'rails_12factor', '~> 0.0.2', group: :production
