@@ -1,15 +1,18 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+# Set the ruby version for Heroku
+ruby "2.0.0"
+
+gem "rails", '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.0'
 gem 'jquery-rails', '~> 3.0.4'
+gem 'pg', '~> 0.15.1'
+gem 'unicorn', '~> 4.6.3'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'turbolinks', '~> 1.3.0'
+gem 'jbuilder', '~> 1.2'
 gem 'haml-rails', '~> 0.4'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 gem 'foreman', '~> 0.63.0'
-gem 'pg', '~> 0.15.1'
-gem 'unicorn', '~> 4.6.3'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
