@@ -12,20 +12,22 @@ $headings-font-weight: 700
 $brand-primary: #d15a47
 $text-color: #4b4b4b
 
-$navbar-default-bg: #ece7d3
+$navbar-default-bg: #313a4c
 $navbar-height: 65px
-$navbar-default-toggle-hover-bg: darken($navbar-default-bg, 10%)
-$navbar-default-toggle-icon-bar-bg: darken($navbar-default-bg, 20%)
-$navbar-default-toggle-border-color: darken($navbar-default-bg, 20%)
+$navbar-default-link-color: #ccc
+$navbar-default-link-hover-color: lighten($navbar-default-link-color, 10%)
+$navbar-default-toggle-hover-bg: lighten($navbar-default-bg, 10%)
+$navbar-default-toggle-icon-bar-bg: lighten($navbar-default-bg, 20%)
+$navbar-default-toggle-border-color: lighten($navbar-default-bg, 20%)
 
-$dropdown-bg: #555
+$dropdown-bg: $navbar-default-bg
 $dropdown-link-color: #fff
 
 @import "bootstrap"
 
 body
   padding-top: 64px
-  background: #666 url(bg-exclusive_paper-invert.jpg)
+  background: $navbar-default-bg
 
 header
   a
@@ -80,6 +82,8 @@ footer
   @include make-xs-column(12)
   @include make-sm-column(6)
   margin-bottom: 20px
+  img
+    opacity: .5
 .footer-products
   @include make-xs-column(12)
   @include make-sm-column(2)
