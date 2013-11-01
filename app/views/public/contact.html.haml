@@ -30,4 +30,9 @@
           %li=link_to "Instagram", "http://instagram.com/originalfuzz"
           %li= link_to "Vimeo", "http://vimeo.com/originalfuzz"
           %li=link_to "Google+", "http://plus.google.com/101277587683541567500/"
-      
+        %h3 Newsletter
+        %form#mc-embedded-subscribe-form{ :action => "http://originalfuzz.us2.list-manage.com/subscribe/post?u=09427a27a1ce710488e698230&amp;id=f8c8b7cab2", :method => "post", :name => "mc-embedded-subscribe-form", :target => "_blank" }
+          %fieldset.form-group
+            %input{ :type => "email", :value => "", :placeholder => "Email Address", :name => "EMAIL" }
+            %input.btn.btn-primary{ :type => "submit", :value => "Subscribe", :name => "subscribe" }
+            %span.help-block Get updates, guitar tips, discounts, &amp; more.

@@ -1,7 +1,12 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Originalfuzzmarketing::Application.config.secret_token = '5cae8d383c078f001a5f3dd7ff0784f3ccb7387e7f88580869d2708b6ecf461ab2f60d1c8f9b1fc0734e9b822872c91d999d627cb2ab7b400882039a0d436623'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+OriginalFuzz::Application.config.secret_key_base = '6a3450f1d78d8fe23a9c8e89e524ffd4da7a6b9cbf66a667563055972e6711bfe7e6ec06a62008e25ac447e2537793f124ff9882afa333f0f5b6f78301ae1c4e'
