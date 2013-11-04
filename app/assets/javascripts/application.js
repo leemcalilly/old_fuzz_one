@@ -17,10 +17,22 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $('.slider').glide({
-    autoplay: false,
-    arrows: true,
-    arrowRightText: "→",
-    arrowLeftText: "←"
+//   $('.slider').glide({
+//     autoplay: false,
+//     arrows: true,
+//     arrowRightText: "→",
+//     arrowLeftText: "←"
+//   });
+
+  $('body').on('click', '.buy-now', function(){
+    _gaq.push(["_trackEvent", "Helium Cart", "Viewed Products"]);
+  });  
+});
+
+$('#Helium').on('ready', function(e){ 
+  console.log('ready');
+  $('#Helium').on('add-to-cart', function(e, sku){
+      console.log('added '+ sku + ' to cart');
+      _gaq.push(["_trackEvent", "Helium Cart", "Add To Cart", "Peruvian Strap", "Dick Dale"]);
   });
 });
