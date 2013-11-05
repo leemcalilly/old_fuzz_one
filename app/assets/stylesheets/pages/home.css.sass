@@ -54,18 +54,27 @@ section.brand-statement
 
 section.product-feature
   @include clearfix
-  padding-top: 40px
-  padding-bottom: 40px
-  background-size: cover
-  background-repeat: no-repeat
-  text-align: center
-  color: #fff
-  @media (min-width: $screen-sm)
-    padding-top: 90px
-    padding-bottom: 90px
+  padding-top: 60px
+  padding-bottom: 60px
+  background: #fff image-url("bg-exclusive_paper.png")
+  &.peruvian .product-feature-title
+    @include make-xs-column(12)
+    @include make-sm-column(6)
+    @include make-sm-column-push(6)
+  &.solid .product-feature-title
+    @include make-xs-column(12)
+    @include make-sm-column(6)
+  &.bag .product-feature-title
+    @include make-xs-column(12)
+    @include make-sm-column(6)
+    @include make-sm-column-offset(3)
+  &.cables .product-feature-title
+    @include make-xs-column(12)
+    @include make-sm-column(6)
+    @include make-sm-column-offset(3)
 .product-feature-title
-  @include make-xs-column(12)
-  @include make-sm-column(12)
-  @include make-lg-column(12)
+  h2
+    padding-bottom: 10px
+    border-bottom: 4px solid $text-color
   p.action
     margin-top: 20px
