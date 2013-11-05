@@ -19,21 +19,11 @@
         %li= link_to "Where To Find Us", "/where-to-find-us"
         %li= link_to "Our Blog", "/blogs/fuzz"
         %li= link_to "Press", "/press"
-    .footer-social
-      %h4 Follow Us
-      %ul.social
-        %li= link_to "Facebook", "http://www.facebook.com/originalfuzz"
-        %li= link_to "Twitter", "http://twitter.com/original_fuzz"
-        %li= link_to "Instagram", "http://instagram.com/originalfuzz"
-        %li= link_to "Vimeo", "http://vimeo.com/originalfuzz"
-        %li= link_to "Google+", "http://plus.google.com/101277587683541567500"
-        %li= link_to "Email", "http://eepurl.com/dGv12"
-  .container
-    .footer-dealers
-      %h4 Dealers
-      %ul
-        %li= link_to "Place an Order", "/place-an-order"
-        %li= link_to "Become a Dealer", "/become-a-dealer"
+      .footer-dealers
+        %h4 Dealers
+        %ul
+          %li= link_to "Place an Order", "/place-an-order"
+          %li= link_to "Become a Dealer", "/become-a-dealer"
     .footer-customer-service
       %h4 Customer Service
       %ul
@@ -45,16 +35,26 @@
         %li= link_to "FAQ", "https://originalfuzz.zendesk.com/hc/en-us/sections/200197896-FAQ"
         %li= link_to "Privacy Policy", "https://originalfuzz.zendesk.com/hc/en-us/articles/200723207-Privacy-Policy"
         %li= link_to "Terms of Use", "https://originalfuzz.zendesk.com/hc/en-us/articles/200943443-Terms-of-Use"
-    .footer-bands
-      %h4 Bands
-      %ul
-        %li= link_to "Built to Spill", "/bands/built-to-spill"
-        %li= link_to "Frightened Rabbit", "/bands/frightened-rabbit"
-        %li= link_to "Kurt Vile", "/bands/kurt-vile"
-        %li= link_to "This Frontier Needs Heroes", "/bands/this-frontier-needs-heroes"
-    .footer-credibility
-      %ul
-        %li= link_to "[NAMM Logo Here]", "http://www.namm.org"
-        %li= link_to "[Secure Shopping With Stripe Logo Here]", "https://stripe.com/us/features#seamless-security"
+    .footer-social
+      %h4 Follow Us
+      %ul.social
+        %li= link_to "Facebook", "http://www.facebook.com/originalfuzz"
+        %li= link_to "Twitter", "http://twitter.com/original_fuzz"
+        %li= link_to "Instagram", "http://instagram.com/originalfuzz"
+        %li= link_to "Vimeo", "http://vimeo.com/originalfuzz"
+        %li= link_to "Google+", "http://plus.google.com/101277587683541567500"
+        %li= link_to "Email", "http://eepurl.com/dGv12"
+  /.container
+  /  .footer-bands
+  /    %h4 Bands
+  /    %ul
+  /      %li= link_to "Built to Spill", "/bands/built-to-spill"
+  /      %li= link_to "Frightened Rabbit", "/bands/frightened-rabbit"
+  /      %li= link_to "Kurt Vile", "/bands/kurt-vile"
+  /      %li= link_to "This Frontier Needs Heroes", "/bands/this-frontier-needs-heroes"
+  /  .footer-credibility
+  /    %ul
+  /      %li= link_to "[NAMM Logo Here]", "http://www.namm.org"
+  /      %li= link_to "[Secure Shopping With Stripe Logo Here]", "https://stripe.com/us/features#seamless-security"
 
 = render "shared/tracking_codes"
