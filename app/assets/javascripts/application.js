@@ -14,20 +14,39 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require glide.min
+//= require jquery.videobackground.js
 //= require_tree .
 
-$(document).ready(function(){
-//   $('.slider').glide({
-//     autoplay: false,
-//     arrows: true,
-//     arrowRightText: "→",
-//     arrowLeftText: "←"
-//   });
+// Because helium is a jerk and messes up $ we need to store our own ref to
+// jQuery and use that.
+var $j = jQuery.noConflict();
+$j(document).ready(function(){
+  $j('.slider').glide({
+    autoplay: false,
+    arrows: true,
+    arrowRightText: "→",
+    arrowLeftText: "←"
+  });
 
-  $('body').on('click', '.buy-now', function(){
+  $j('.brand-feature').prepend('<div class="video-background"></div>');
+  $j('.video-background').videobackground({
+    videoSource: [['/assets/of-12.mp4', 'video/mp4'],
+    ['/assets/of-12.webm', 'video/webm'], 
+    ['/assets/of-12.ogv', 'video/ogg']], 
+    loop: true,
+    resize: false,
+    poster: '/assets/video-still.jpg',
+    loadedCallback: function() {
+    $(this).videobackground('mute');
+    }
+  });
+
+  $j('body').on('click', '.buy-now', function(){
     _gaq.push(["_trackEvent", "Helium Cart", "Viewed Products"]);
-  });  
+  });
 });
+
+
 
 $('#Helium').on('ready', function(e){ 
   console.log('ready');
