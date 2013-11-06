@@ -41,8 +41,12 @@ section.team
 .team-member
   @include make-xs-column(12)
   @include make-md-column(6)
+  margin-bottom: 40px
+  @media (min-width: $screen-md)
+    margin-bottom: 0
   .avatar
-    @include make-xs-column(4)
+    @include make-xs-column(6)
+    @include make-md-column(4)
     img
       padding: 10px 10px 30px 10px
       background: #fff
@@ -51,4 +55,5 @@ section.team
       -webkit-transform: rotate(-2deg)
       transform: rotate(-2deg)
   .info
-    @include make-xs-column(8)
+    @include make-xs-column(6)
+    @include make-md-column(8)
