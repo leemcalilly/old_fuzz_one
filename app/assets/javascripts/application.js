@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require modernizr
 //= require bootstrap
 //= require glide.min
 //= require jquery.videobackground.js
@@ -29,17 +30,20 @@ $j(document).ready(function(){
   });
 
   $j('.brand-feature').prepend('<div class="video-background"></div>');
-  $j('.video-background').videobackground({
-    videoSource: [['/assets/of-12.mp4', 'video/mp4'],
-    ['/assets/of-12.webm', 'video/webm'], 
-    ['/assets/of-12.ogv', 'video/ogg']], 
-    loop: true,
-    resize: false,
-    poster: '/assets/video-still.jpg',
-    loadedCallback: function() {
-    $(this).videobackground('mute');
-    }
-  });
+  if (Modernizr.touch) {
+  } else {
+    $j('.video-background').videobackground({
+      videoSource: [['/assets/of-12.mp4', 'video/mp4'],
+      ['/assets/of-12.webm', 'video/webm'], 
+      ['/assets/of-12.ogv', 'video/ogg']], 
+      loop: true,
+      resize: false,
+      poster: '/assets/video-still.jpg',
+      loadedCallback: function() {
+      $(this).videobackground('mute');
+      }
+    });
+  }
 
   $j('body').on('click', '.buy-now', function(){
     _gaq.push(["_trackEvent", "Helium Cart", "Viewed Products"]);

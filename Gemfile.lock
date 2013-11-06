@@ -70,6 +70,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25)
     minitest (4.7.5)
+    modernizr (2.6.2)
+      sprockets (~> 2.0)
     multi_json (1.8.2)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -138,6 +140,7 @@ DEPENDENCIES
   haml-rails (~> 0.4)
   jbuilder (~> 1.2)
   jquery-rails (~> 3.0.4)
+  modernizr
   pg (~> 0.15.1)
   rails (~> 4.0.0)
   rails_12factor (~> 0.0.2)
