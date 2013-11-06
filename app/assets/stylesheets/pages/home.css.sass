@@ -52,26 +52,41 @@ section.brand-statement
       height: 24px
       background: #fff image-url("bg-exclusive_paper.png")
 
+section.product-features
+  background: #fff image-url("bg-exclusive_paper.png")
 section.product-feature
   @include clearfix
   padding-top: 60px
   padding-bottom: 60px
-  background: #fff image-url("bg-exclusive_paper.png")
-  &.peruvian .product-feature-title
-    @include make-xs-column(12)
-    @include make-sm-column(6)
-    @include make-sm-column-push(6)
-  &.solid .product-feature-title
-    @include make-xs-column(12)
-    @include make-sm-column(6)
-  &.bag .product-feature-title
-    @include make-xs-column(12)
-    @include make-sm-column(6)
-    @include make-sm-column-offset(3)
-  &.cables .product-feature-title
-    @include make-xs-column(12)
-    @include make-sm-column(6)
-    @include make-sm-column-offset(3)
+  &.peruvian
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-push(6)
+  &.solid
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+  &.bag
+    text-align: center
+    img
+      @media (max-width: $screen-xs-max)
+        width: 100%
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-offset(3)
+  &.cables
+    .container
+      position: relative
+    img
+      position: absolute
+      left: -500px
+      top: 30px
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-push(6)
 .product-feature-title
   h2
     padding-bottom: 10px
