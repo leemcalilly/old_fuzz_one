@@ -59,37 +59,60 @@ section.product-feature
   padding-top: 60px
   padding-bottom: 60px
   &.peruvian
-    .product-feature-title
+    .product-feature-shot
       @include make-xs-column(12)
       @include make-sm-column(6)
-      @include make-sm-column-push(6)
-  &.solid
-    .product-feature-title
-      @include make-xs-column(12)
-      @include make-sm-column(6)
-  &.bag
-    text-align: center
-    img
-      @media (max-width: $screen-xs-max)
+      img
         width: 100%
     .product-feature-title
       @include make-xs-column(12)
       @include make-sm-column(6)
-      @include make-sm-column-offset(3)
-  &.cables
-    .container
-      position: relative
-    img
-      position: absolute
-      left: -500px
-      top: 30px
-    .product-feature-title
+  &.solid
+    .product-feature-shot
       @include make-xs-column(12)
       @include make-sm-column(6)
       @include make-sm-column-push(6)
+      img
+        width: 100%
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-pull(6)
+  &.bag
+    .product-feature-shot
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      img
+        width: 100%
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+  &.cables
+    .product-feature-shot
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-push(6)
+      img
+        width: 100%
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-pull(6)
 .product-feature-title
+  @media (min-width: $screen-sm)
+    margin-top: 40px
   h2
     padding-bottom: 10px
-    border-bottom: 4px solid $text-color
+    border-bottom: 2px solid $brand-primary
+    font-size: 36px
+  .callouts
+    margin-bottom: 10px
+    padding-bottom: 10px
+    font-family: $font-headline
+    font-weight: 700
+    font-size: 14px
+    color: $brand-primary
+    border-bottom: 2px solid $brand-primary
+    text-transform: uppercase
   p.action
     margin-top: 20px

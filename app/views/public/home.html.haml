@@ -7,34 +7,52 @@
 %section.product-features
   %section.product-feature.peruvian
     .container
+      .product-feature-shot
+        %a{href:"/products/peruvian-straps"}
+          = image_tag "home-peruvian.jpg", alt: "Peruvian Straps"
       .product-feature-title
-        %h2 Peruvian Straps
+        %h2= link_to "Peruvian Straps", "/products/peruvian-straps"
+        .callouts
+          Handwoven • Fair-Trade • Unique • Made In Peru
         %p The fabric for these straps is handwoven according to fair-trade guidelines in Peru. Each strap is as unique as the artisan that made it. Built with top-grain leather and antique-style hardware, these are some of the most beautiful guitar straps in the world.
         %p.action
-          = link_to "Learn More", "/products/peruvianstraps", class: "btn btn-primary"
+          = link_to "Learn More", "/products/peruvian-straps", class: "btn btn-primary"
   
   %section.product-feature.solid
     .container
+      .product-feature-shot
+        %a{href:"/products/solid-straps"}
+          = image_tag "home-solid.jpg", alt: "Solid Straps"
       .product-feature-title
-        %h2 Solid Straps
+        %h2= link_to "Solid Straps", "/products/solid-straps"
+        .callouts
+          Classic • Simple • Durable • High-Quality
         %p A new classic. If you're looking for a simple, high-quality guitar strap, you've found it. Our strap feels great on your shoulder. We use top-grain leather and elegant, durable hardware. It's a new standard that complements any instrument.
         %p.action
-          = link_to "Learn More", "/products/peruvianstraps", class: "btn btn-primary"
+          = link_to "Learn More", "/products/solid-straps", class: "btn btn-primary"
   
   %section.product-feature.bag
     .container
-      = image_tag "home-bags.png", alt: "Fuzz Bag"
+      .product-feature-shot
+        %a{href:"/products/solid-straps"}
+          = image_tag "home-bags.jpg", alt: "Fuzz Bag"
       .product-feature-title
-        %h2 Fuzz Bag
+        %h2= link_to "Fuzz Bag", "/products/fuzz-bag"
+        .callouts
+          Classic • Simple • Durable • Adaptable
         %p Your guitar gear finally has a home. The Fuzz Bag is a place to keep all of your guitar tools. It combines the comfortable aesthetic of a classic gym bag with a padded pedal case and custom pockets for everything else. It's road-tested by the musicians who designed it, and it's made with care.
         %p.action
-          = link_to "Learn More", "/products/peruvianstraps", class: "btn btn-primary"
+          = link_to "Learn More", "/products/fuzz-bag", class: "btn btn-primary"
   
   %section.product-feature.cables
     .container
-      = image_tag "home-cables.png", alt: "Fuzz Bag"
+      .product-feature-shot
+        %a{href:"/products/solid-straps"}
+          = image_tag "home-cables.jpg", alt: "Cables"
       .product-feature-title
-        %h2 Cables
+        %h2= link_to "Cables", "/products/cables"
+        .callouts
+          High-Quality • True Tone • Japanese Copper • Retro Connectors
         %p True to your tone. Our cables use high-quality, Japanese copper cable with retro connectors. Their perfectly balanced frequency response delivers shimmering highs and earth-shaking lows that stay true to your tone. Like all of our products, each cable comes with a lifetime guarantee.
         %p.action
-          = link_to "Learn More", "/products/peruvianstraps", class: "btn btn-primary"
+          = link_to "Learn More", "/products/cables", class: "btn btn-primary"
