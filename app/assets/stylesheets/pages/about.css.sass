@@ -32,10 +32,23 @@ section.team
   padding-top: 60px
   padding-bottom: 60px
   background: #fff image-url("bg-exclusive_paper.png")
+  border-top: 1px solid #ccc
   @include clearfix
   h2
     @include make-xs-column(12)
-    margin-top: 40px
+    margin-top: 20px
+    margin-bottom: 40px
 .team-member
   @include make-xs-column(12)
   @include make-md-column(6)
+  .avatar
+    @include make-xs-column(4)
+    img
+      padding: 10px 10px 30px 10px
+      background: #fff
+      border: 1px solid #ddd
+      width: 100%
+      -webkit-transform: rotate(-2deg)
+      transform: rotate(-2deg)
+  .info
+    @include make-xs-column(8)

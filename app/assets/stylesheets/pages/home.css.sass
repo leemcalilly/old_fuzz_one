@@ -75,6 +75,8 @@ section.product-feature
       @include make-sm-column-push(6)
       img
         width: 100%
+        -webkit-transform: rotate(2deg)
+        transform: rotate(2deg)
     .product-feature-title
       @include make-xs-column(12)
       @include make-sm-column(6)
@@ -95,10 +97,19 @@ section.product-feature
       @include make-sm-column-push(6)
       img
         width: 100%
+        -webkit-transform: rotate(2deg)
+        transform: rotate(2deg)
     .product-feature-title
       @include make-xs-column(12)
       @include make-sm-column(6)
       @include make-sm-column-pull(6)
+.product-feature-shot
+  img
+    padding: 10px 10px 60px 10px
+    background: #fff
+    border: 1px solid #ddd
+    -webkit-transform: rotate(-2deg)
+    transform: rotate(-2deg)
 .product-feature-title
   @media (min-width: $screen-sm)
     margin-top: 40px
