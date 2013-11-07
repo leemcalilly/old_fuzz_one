@@ -1,12 +1,15 @@
 - content_for :title, "Peruvian Guitar Straps | Original Fuzz"
 
 %section.product-header
-  .container
-    .product-header-title
-      %h1 The Peruvian Strap
-      %h2 $85
-      %p This strap was handwoven in Peru according to fair trade guidelines. Each strap is as unique as the artisan that crafted it. Our strap feels great on your shoulder. We use tough leather and elegant, durable hardware. It's a new standard that complements any instrument.
-      %p= link_to "Choose Style", "#peruvian-patterns", class: "btn btn-primary buy-now"
+  .overlay{style:"background-image: url(/assets/products/peruvian/header.png);"}
+    .container
+      .product-header-title
+        %h1 The Peruvian Strap
+        .callouts
+          Handwoven • Unique • Made In Peru
+        %p This strap was handwoven in Peru according to fair trade guidelines. Each strap is as unique as the artisan that crafted it. Our strap feels great on your shoulder. We use tough leather and elegant, durable hardware. It's a new standard that complements any instrument.
+        %h1 $85
+        %p= link_to "Choose Style", "#peruvian-patterns", class: "btn btn-primary buy-now"
 
 %section.product-gallery
   .slider
