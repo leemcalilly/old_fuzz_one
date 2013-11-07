@@ -61,4 +61,9 @@ OriginalFuzz::Application.routes.draw do
   
   get 'bands(/:action)', controller: 'bands'
   get 'products(/:action)', controller: 'products'
+
+  get 'collections/guitar-straps', to: redirect('/products/peruvian-straps')
+  get 'collections/guitar-straps/*remainder', to: redirect {|p, req| "/products/#{p[:remainder].match(/peruvian/) ? 'peruvian' : 'solid'}-straps" }
+  get 'collections/bags', to: redirect('/products/fuzz-bag')
+  get 'collections/cables', to: redirect('/products/cables')
 end
