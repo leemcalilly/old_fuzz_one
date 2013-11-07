@@ -26,12 +26,22 @@ section.product-header
     border-bottom: 2px solid $text-color
     text-transform: uppercase
 .product-header-cable
-  @include make-xs-column(12)
-  @include make-sm-column(12)
-  @include make-md-column(4)
+  padding-top: 25%
+  padding-bottom: 40px
+  background-position: 0 20px
+  background-size: 100%
+  background-repeat: no-repeat
+  border-bottom: 1px solid #ddd
   @media (min-width: $screen-md)
-    padding-top: 20px
-    padding-bottom: 40px
+    padding-top: 80px
+    padding-bottom: 80px
+    background-position: 0 50%
+    background-size: 58%
+  .info
+    @include make-xs-column(12)
+    @include make-sm-column(12)
+    @include make-md-column-offset(8)
+    @include make-md-column(4)
   .helium-buy-now, a:hover.helium-buy-now
     @extend .btn
     @extend .btn-primary
