@@ -25,8 +25,8 @@ $j(document).ready(function(){
   $j('.slider').glide({
     autoplay: false,
     arrows: true,
-    arrowRightText: "→",
-    arrowLeftText: "←"
+    arrowRightText: "›",
+    arrowLeftText: "‹"
   });
 
   $j('.brand-feature').prepend('<div class="video-background"></div>');

@@ -42,12 +42,6 @@ section.product-header
     @include make-sm-column(12)
     @include make-md-column-offset(8)
     @include make-md-column(4)
-  .helium-buy-now, a:hover.helium-buy-now
-    @extend .btn
-    @extend .btn-primary
-    box-shadow: none
-    text-shadow: none
-    height: auto
 img.cables
   width: 100%
 
@@ -63,7 +57,8 @@ section.product-colors
     width: 100%
 
 section.product-points
-  padding: 40px 0
+  padding-top: 40px
+  padding-bottom: 40px
   background: #fff image-url("bg-exclusive_paper.png")
 .product-point
   @include make-xs-column(12)
@@ -78,6 +73,7 @@ section.product-points
     width: 100%
 .product-point-info
   @include make-xs-column(12)
+  padding: 0
   h3
     margin-top: 0
 
@@ -103,12 +99,6 @@ section.product-variations
     h3
       text-transform: uppercase
       font-size: 18px
-    .helium-buy-now
-      @extend .btn
-      @extend .btn-primary
-      box-shadow: none
-      text-shadow: none
-      height: auto
 
 section.product-colors
   padding: 40px 0
@@ -117,9 +107,3 @@ section.product-colors
     text-align: center
     img
       width: 70%
-    .helium-buy-now
-      @extend .btn
-      @extend .btn-primary
-      box-shadow: none
-      text-shadow: none
-      height: auto
