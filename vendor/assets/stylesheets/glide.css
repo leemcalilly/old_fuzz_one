@@ -42,13 +42,12 @@
     .slider-arrow {
       position: absolute;
       display: block;
-      padding: 10px;
-      margin-bottom: -25px;
+      margin-bottom: -36px;
       color: rgba(255,255,255,.5);
       text-decoration: none;
       font-size: 72px;
     }
-      .slider-arrow:hover {
+      .slider-arrow:link, .slider-arrow:active, .slider-arrow:hover {
         text-decoration: none;
         color: rgba(255,255,255,1);
       }
