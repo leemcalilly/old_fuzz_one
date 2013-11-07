@@ -33,9 +33,9 @@ $j(document).ready(function(){
   if (Modernizr.touch) {
   } else {
     $j('.video-background').videobackground({
-      videoSource: [['/assets/of-12.mp4', 'video/mp4'],
-      ['/assets/of-12.webm', 'video/webm'], 
-      ['/assets/of-12.ogv', 'video/ogg']], 
+      videoSource: [['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.mp4', 'video/mp4'],
+      ['/assets/of-12.webm', 'https://s3.amazonaws.com/fuzz-website/assets/video/of-12.webm'], 
+      ['/assets/of-12.ogv', 'https://s3.amazonaws.com/fuzz-website/assets/video/of-12.ogv']], 
       loop: true,
       resize: false,
       poster: '/assets/video-still.jpg',
