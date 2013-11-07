@@ -9,7 +9,7 @@
           Classic • Simple • Durable • Adaptable
         %p Your guitar gear finally has a home. The Fuzz Bag is a place to keep all of your guitar tools. It's like a "camera bag" for guitar players that combines the comfortable aesthetic of a classic gym bag with a padded pedal case and custom pockets for everything else. It's road-tested by the musicians who designed it, and it's made with care.
         %h1 $120
-        %p= link_to "Choose Style", "#choose", class: "btn btn-primary"
+        %p= link_to "Choose Style", "#bags", class: "btn btn-primary"
 
 %section.product-gallery
   .slider
@@ -40,5 +40,16 @@
         %h3 Lifetime Guarantee
         %p This is a sturdy bag, and it's tested to hold up to abuse. That's why we offer a lifetime guarantee. If something breaks or wears out, send it back to us and we'll get it fixed or send you a new one. The classic gym bag aesthetic will keep you looking stylish for years to come.
 
-%section#choose.product-colors
-  = image_tag "http://placehold.it/1000x400"
+%section#bags.product-colors
+  .product-color
+    = image_tag "products/fuzzbag/bag-blue.png"
+    %h3 Blue
+    %p= link_to "Buy Now", "http://he2.co/YQ2S6G0K4E2", class: "btn btn-primary helium-buy-now", "data-sku"=>"FS-001"
+  .product-color
+    = image_tag "products/fuzzbag/bag-green.png"
+    %h3 Green
+    %p= link_to "Buy Now", "http://he2.co/YQ2S6G0K4E2", class: "btn btn-primary helium-buy-now", "data-sku"=>"FS-001"
+  .product-color
+    = image_tag "products/fuzzbag/bag-black.png"
+    %h3 Black
+    %p= link_to "Buy Now", "http://he2.co/YQ2S6G0K4E2", class: "btn btn-primary helium-buy-now", "data-sku"=>"FS-001"
