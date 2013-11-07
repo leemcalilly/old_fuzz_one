@@ -1,12 +1,15 @@
 - content_for :title, "The Fuzz Bag | Original Fuzz"
 
 %section.product-header
-  .container
-    .product-header-title
-      %h1 The Fuzz Bag
-      %h2 $120
-      %p Your guitar gear finally has a home. The Fuzz Bag is a place to keep all of your guitar tools. It's like a "camera bag" for guitar players that combines the comfortable aesthetic of a classic gym bag with a padded pedal case and custom pockets for everything else. It's road-tested by the musicians who designed it, and it's made with care.
-      %p= link_to "Choose Style", "#choose", class: "btn btn-primary"
+  .overlay{style:"background-image: url(/assets/products/fuzzbag/header.png);"}
+    .container
+      .product-header-title
+        %h1 The Fuzz Bag
+        .callouts
+          Classic • Simple • Durable • Adaptable
+        %p Your guitar gear finally has a home. The Fuzz Bag is a place to keep all of your guitar tools. It's like a "camera bag" for guitar players that combines the comfortable aesthetic of a classic gym bag with a padded pedal case and custom pockets for everything else. It's road-tested by the musicians who designed it, and it's made with care.
+        %h1 $120
+        %p= link_to "Choose Style", "#choose", class: "btn btn-primary"
 
 %section.product-gallery
   .slider
