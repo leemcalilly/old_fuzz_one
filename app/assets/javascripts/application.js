@@ -37,6 +37,7 @@ $j(document).ready(function(){
       ['/assets/of-12.webm', 'https://s3.amazonaws.com/fuzz-website/assets/video/of-12.webm'], 
       ['/assets/of-12.ogv', 'https://s3.amazonaws.com/fuzz-website/assets/video/of-12.ogv']], 
       loop: true,
+      preload: 'auto',
       resize: false,
       poster: '/assets/video-still.jpg',
       loadedCallback: function() {
@@ -45,17 +46,21 @@ $j(document).ready(function(){
     });
   }
 
+  $j('li.slide img').first().one('load', function() {
+    $j(window).resize();
+  });
+
+  $j(window).on('resize', function() {
+    $j('ul.slides').height($j('li.slide img').height());
+  });
+
   $j('body').on('click', '.buy-now', function(){
     _gaq.push(["_trackEvent", "Helium Cart", "Viewed Products"]);
   });
 });
 
-
-
-$('#Helium').on('ready', function(e){ 
-  console.log('ready');
-  $('#Helium').on('add-to-cart', function(e, sku){
-      console.log('added '+ sku + ' to cart');
-      _gaq.push(["_trackEvent", "Helium Cart", "Add To Cart", "Peruvian Strap", "Dick Dale"]);
-  });
-});
+// $('#Helium').on('ready', function(e){ 
+//   $('#Helium').on('add-to-cart', function(e, sku){
+//       _gaq.push(["_trackEvent", "Helium Cart", "Add To Cart", "Peruvian Strap", "Dick Dale"]);
+//   });
+// });
