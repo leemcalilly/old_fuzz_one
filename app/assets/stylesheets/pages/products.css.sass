@@ -25,13 +25,15 @@ section.product-header
     border-top: 2px solid $text-color
     border-bottom: 2px solid $text-color
     text-transform: uppercase
-.cable-header
-  img
-    width: 100%
 .product-header-cable
   @include make-xs-column(12)
-  @include make-sm-column(4)
-  padding-bottom: 40px
+  @include make-sm-column(12)
+  @include make-md-column(4)
+  @media (min-width: $screen-md)
+    padding-top: 20px
+    padding-bottom: 40px
+img.cables
+  width: 100%
 
 section.product-gallery
   img
