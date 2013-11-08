@@ -34,8 +34,8 @@ $j(document).ready(function(){
   } else {
     $j('.video-background').videobackground({
       videoSource: [['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.mp4', 'video/mp4'],
-      ['/assets/of-12.webm', 'https://s3.amazonaws.com/fuzz-website/assets/video/of-12.webm'], 
-      ['/assets/of-12.ogv', 'https://s3.amazonaws.com/fuzz-website/assets/video/of-12.ogv']], 
+      ['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.webm', 'video/webm'], 
+      ['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.ogv', 'video/ogv']], 
       loop: true,
       preload: 'auto',
       resize: false,
