@@ -41,7 +41,7 @@ $j(document).ready(function(){
       resize: false,
       poster: '/assets/video-still.jpg',
       loadedCallback: function() {
-      $(this).videobackground('mute');
+      $j(this).videobackground('mute');
       }
     });
   }
