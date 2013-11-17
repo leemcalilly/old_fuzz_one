@@ -1,6 +1,10 @@
 .where
   hgroup
     @include make-xs-column(12)
+    p
+      width: 100%
+      @media (min-width: $screen-sm)
+        width: 80%
 .where-state
   margin-bottom: 40px
 .where-state h3
