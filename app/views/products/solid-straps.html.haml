@@ -14,10 +14,14 @@
 %section.product-gallery
   .slider
     %ul.slides
-      %li.slide= image_tag "products/solid/1.jpg"
-      %li.slide= image_tag "products/solid/2.jpg"
-      %li.slide= image_tag "products/solid/3.jpg"
-      %li.slide= image_tag "products/solid/4.jpg"
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/solid/1.jpg")}, (default)], [#{image_path("products/solid/1-640.jpg")}, (small)]", alt: "Solid Straps"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/solid/2.jpg")}, (default)], [#{image_path("products/solid/2-640.jpg")}, (small)]", alt: "Solid Straps"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/solid/3.jpg")}, (default)], [#{image_path("products/solid/3-640.jpg")}, (small)]", alt: "Solid Straps"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/solid/4.jpg")}, (default)], [#{image_path("products/solid/4-640.jpg")}, (small)]", alt: "Solid Straps"}
 
 %section.product-points
   .container
