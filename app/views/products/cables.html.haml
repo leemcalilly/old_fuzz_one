@@ -29,13 +29,20 @@
 %section.product-gallery
   .slider
     %ul.slides
-      %li.slide= image_tag "products/cables/1.jpg"
-      %li.slide= image_tag "products/cables/2.jpg"
-      %li.slide= image_tag "products/cables/3.jpg"
-      %li.slide= image_tag "products/cables/4.jpg"
-      %li.slide= image_tag "products/cables/5.jpg"
-      %li.slide= image_tag "products/cables/6.jpg"
-      %li.slide= image_tag "products/cables/7.jpg"
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/1.jpg")}, (default)], [#{image_path("products/cables/1-640.jpg")}, (small)]", alt: "FuzzBag"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/2.jpg")}, (default)], [#{image_path("products/cables/2-640.jpg")}, (small)]", alt: "FuzzBag"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/3.jpg")}, (default)], [#{image_path("products/cables/3-640.jpg")}, (small)]", alt: "FuzzBag"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/4.jpg")}, (default)], [#{image_path("products/cables/4-640.jpg")}, (small)]", alt: "FuzzBag"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/5.jpg")}, (default)], [#{image_path("products/cables/5-640.jpg")}, (small)]", alt: "FuzzBag"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/6.jpg")}, (default)], [#{image_path("products/cables/6-640.jpg")}, (small)]", alt: "FuzzBag"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/cables/7.jpg")}, (default)], [#{image_path("products/cables/7-640.jpg")}, (small)]", alt: "FuzzBag"}
 
 %section.product-points
   .container
