@@ -16,12 +16,16 @@
 //= require bootstrap
 //= require glide.min
 //= require jquery.videobackground.js
+//= require foundation.min
+//= require foundation.interchange
 //= require_tree .
 
 // Because helium is a jerk and messes up $ we need to store our own ref to
 // jQuery and use that.
 var $j = jQuery.noConflict();
+$j(document).foundation('');
 $j(document).ready(function(){
+  $j(document).foundation();
   $j('.slider').glide({
     autoplay: false,
     arrows: true,
