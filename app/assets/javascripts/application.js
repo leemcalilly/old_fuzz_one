@@ -16,52 +16,50 @@
 //= require bootstrap
 //= require glide.min
 //= require jquery.videobackground.js
-//= require foundation.min
-//= require foundation.interchange
 //= require_tree .
 
 // Because helium is a jerk and messes up $ we need to store our own ref to
 // jQuery and use that.
-var $j = jQuery.noConflict();
-$j(document).foundation('');
-$j(document).ready(function(){
-  $j(document).foundation();
-  $j('.slider').glide({
-    autoplay: false,
-    arrows: true,
-    arrowRightText: "›",
-    arrowLeftText: "‹"
-  });
-
-  $j('.brand-feature').prepend('<div class="video-background"></div>');
-  if (Modernizr.touch) {
-  } else {
-    $j('.video-background').videobackground({
-      videoSource: [['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.mp4', 'video/mp4'],
-      ['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.webm', 'video/webm'], 
-      ['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.ogv', 'video/ogg']], 
-      loop: true,
-      preload: 'auto',
-      resize: false,
-      poster: '/assets/video-still.jpg',
-      loadedCallback: function() {
-      $j(this).videobackground('mute');
-      }
+$j = jQuery.noConflict();
+(function($) {
+  $(document).ready(function(){
+    $('.slider').glide({
+      autoplay: false,
+      arrows: true,
+      arrowRightText: "›",
+      arrowLeftText: "‹"
     });
-  }
 
-  $j('li.slide img').first().one('load', function() {
-    $j(window).resize();
-  });
+    $('.brand-feature').prepend('<div class="video-background"></div>');
+    if (Modernizr.touch) {
+    } else {
+      $('.video-background').videobackground({
+        videoSource: [['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.mp4', 'video/mp4'],
+        ['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.webm', 'video/webm'], 
+        ['https://s3.amazonaws.com/fuzz-website/assets/video/of-12.ogv', 'video/ogg']], 
+        loop: true,
+        preload: 'auto',
+        resize: false,
+        poster: '/assets/video-still.jpg',
+        loadedCallback: function() {
+        $(this).videobackground('mute');
+        }
+      });
+    }
 
-  $j(window).on('resize', function() {
-    $j('ul.slides').height($j('li.slide img').height());
-  });
+    $('li.slide img').first().one('load', function() {
+      $(window).resize();
+    });
 
-  $j('body').on('click', '.buy-now', function(){
-    _gaq.push(["_trackEvent", "Helium Cart", "Viewed Products"]);
+    $(window).on('resize', function() {
+      $('ul.slides').height($('li.slide img').height());
+    });
+
+    $('body').on('click', '.buy-now', function(){
+      _gaq.push(["_trackEvent", "Helium Cart", "Viewed Products"]);
+    });
   });
-});
+})($j)
 
 // $('#Helium').on('ready', function(e){ 
 //   $('#Helium').on('add-to-cart', function(e, sku){

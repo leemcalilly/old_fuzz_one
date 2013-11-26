@@ -59,3 +59,7 @@
   /      %li= link_to "[Secure Shopping With Stripe Logo Here]", "https://stripe.com/us/features#seamless-security"
 
 = render "shared/tracking_codes"
+= javascript_include_tag "foundation.min"
+= javascript_include_tag "foundation.interchange"
+:javascript
+  $j(document).foundation();
