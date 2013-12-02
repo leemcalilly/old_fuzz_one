@@ -8,6 +8,10 @@ section.product-header
       background-position: left 50%
       background-repeat: no-repeat
       background-size: 55%
+  &.cable
+    .overlay
+      @media (min-width: $screen-sm)
+        background-size: 60%
 .product-header-title
   @include make-xs-column(12)
   @include make-sm-column(4)

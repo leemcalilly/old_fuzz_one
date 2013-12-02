@@ -1,30 +1,15 @@
 - content_for :title, "Instrument & Mic Cables | Original Fuzz"
 
-%section.product-header
-  .product-header-cable{style: "background-image: url(#{asset_path('products/cables/straight.png')});"}
+%section.product-header.cable
+  .overlay{style:"background-image: url(#{asset_path('products/cables/header.png')});"}
     .container
-      .info
-        %h1 Straight
-        %p We love this 50s-style connector. They are study, easy to grip and hold up over heavy use.
-        %p 15' straight 1/4" instrument cable
+      .product-header-title
+        %h1 Cables
+        .callouts
+          High Fidelity • Balanced • Japanese Copper • Retro Connectors
+        %p True to your tone. Our cables use high-quality, Japanese cabling with retro connectors. Their perfectly balanced frequency response delivers shimmering highs and earth-shaking lows that stay true to your tone. Like all of our products, each cable comes with a lifetime guarantee.
         %h1 $55
-        %p= link_to "Add To Cart", "http://he2.co/KB3E9S6I2I4", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-002"
-  .product-header-cable{style: "background-image: url(#{asset_path('products/cables/mic.png')});"}
-    .container
-      .info
-        %h1 XLR Mic
-        %p We made it long enough to stretch across the room from your drum overheads to the mixer, yet not too long for use at a small gig or rehearsal space.
-        %p 25' XLR microphone cable
-        %h1 $55
-        %p= link_to "Add To Cart", "http://he2.co/AW2A8O4M6A0", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-003"
-  .product-header-cable{style: "background-image: url(#{asset_path('products/cables/right.png')});"}
-    .container
-      .info
-        %h1 Right Angle
-        %p The right angle connector is really useful in many situations. It's especially great if you like leaning your guitar against your amp.
-        %p 15' right angle 1/4" instrument cable
-        %h1 $55
-        %p= link_to "Add To Cart", "http://he2.co/GA8M2K2G0M6", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-001"
+        %p= link_to "Choose Style", "#bags", class: "btn btn-primary"
 
 %section.product-gallery
   .slider
@@ -62,3 +47,31 @@
       .product-point-info
         %h3 Lifetime Guarantee
         %p We're confident in our top-quality components and assembly that's done right here in the USA, but if you have problems with one of our cables, just send it back and we'll either fix it or send you a replacement.
+
+%section.product-header
+  .container
+    %h2 Cable Types
+  .product-header-cable{style: "background-image: url(#{asset_path('products/cables/straight.png')});"}
+    .container
+      .info
+        %h3 Straight
+        %p We love this 50s-style connector. They are study, easy to grip and hold up over heavy use.
+        %p 15' straight 1/4" instrument cable
+        %h1 $55
+        %p= link_to "Add To Cart", "http://he2.co/KB3E9S6I2I4", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-002"
+  .product-header-cable{style: "background-image: url(#{asset_path('products/cables/mic.png')});"}
+    .container
+      .info
+        %h3 XLR Mic
+        %p We made it long enough to stretch across the room from your drum overheads to the mixer, yet not too long for use at a small gig or rehearsal space.
+        %p 25' XLR microphone cable
+        %h1 $55
+        %p= link_to "Add To Cart", "http://he2.co/AW2A8O4M6A0", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-003"
+  .product-header-cable{style: "background-image: url(#{asset_path('products/cables/right.png')});"}
+    .container
+      .info
+        %h3 Right Angle
+        %p The right angle connector is really useful in many situations. It's especially great if you like leaning your guitar against your amp.
+        %p 15' right angle 1/4" instrument cable
+        %h1 $55
+        %p= link_to "Add To Cart", "http://he2.co/GA8M2K2G0M6", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-001"
