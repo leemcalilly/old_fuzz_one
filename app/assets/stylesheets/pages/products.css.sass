@@ -77,6 +77,29 @@ section.product-points
   h3
     margin-top: 0
 
+section.callouts
+  padding-top: 40px
+  padding-bottom: 40px
+  background: #fff image-url("bg-exclusive_paper.png")
+  h2
+    margin-bottom: 40px
+    padding-bottom: 20px
+    border-bottom: 2px solid $text-color
+  .callout
+    @include make-row
+    margin-bottom: 60px
+    .pic
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      img
+        padding: 10px
+        background: #fff
+        border: 1px solid #ddd
+        width: 100%
+    .info
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      padding-top: 20px
 section.product-variations
   padding: 40px 0
   background: #fff
@@ -103,6 +126,10 @@ section.product-variations
 section.product-colors
   padding: 40px 0
   background: #fff image-url("bg-exclusive_paper.png")
+  h2
+    margin-bottom: 40px
+    padding-bottom: 20px
+    border-bottom: 2px solid $text-color
   .product-color
     text-align: center
     img

@@ -31,26 +31,37 @@
       %li.slide
         %img{"data-interchange"=>"[#{image_path("products/fuzzbag/8.jpg")}, (default)], [#{image_path("products/fuzzbag/8-640.jpg")}, (small)]", alt: "FuzzBag"}
 
-%section.product-points
+%section.callouts
   .container
-    .product-point
-      .product-point-info
+    %h2 Features
+    .callout
+      .pic
+        = image_tag "products/fuzzbag/7-640.jpg", alt: "Padded Pedal Case"
+      .info
         %h3 Padded Pedal Case
         %p There's a zip compartment in the bottom of the bag that's perfect for zipping your pedals in snuggly. It's padded, so you don't have to worry about them if you put it down on a hard surface, and the waterproof lining keeps the electronics in your pedals safe.
-    .product-point
-      .product-point-info
+    .callout
+      .info
         %h3 Custom Pockets
-        %p The Fuzz Bag has custom pockets for picks, strings, and all the other gear that you need as a guitar player. It has special pockets for strings, picks, and pedals, and a zip pocket to hanlde all your odds-and-ends like tuners, mics, string winders, and batteries. 
-    .product-point
-      .product-point-info
+        %p The Fuzz Bag has custom pockets for picks, strings, and all the other gear that you need as a guitar player. It has special pockets for strings, picks, and pedals, and a zip pocket to hanlde all your odds-and-ends like tuners, mics, string winders, and batteries.
+      .pic
+        = image_tag "products/fuzzbag/2-640.jpg", alt: "Custom Pockets"
+    .callout
+      .pic
+        = image_tag "products/fuzzbag/6-640.jpg", alt: "Waterproof Lining"
+      .info
         %h3 Waterproof Lining
         %p The Fuzz Bag has a sturdy 3-layer structure that keeps water out and everything inside dry. The middle layer is made of waterproof rip-stop nylon. So you don't have to worry if you get caught in the rain when you're loading out or running inside for a guitar lesson.
-    .product-point
-      .product-point-info
+    .callout
+      .info
         %h3 Lifetime Guarantee
         %p This is a sturdy bag, and it's tested to hold up to abuse. That's why we offer a lifetime guarantee. If something breaks or wears out, send it back to us and we'll get it fixed or send you a new one. The classic gym bag aesthetic will keep you looking stylish for years to come.
+      .pic
+        = image_tag "products/fuzzbag/3-640.jpg", alt: "Lifetime Guarantee"
 
 %section#bags.product-colors
+  .container
+    %h2 Bag Variations
   .product-color
     %img{"data-interchange"=>"[#{image_path("products/fuzzbag/bag-blue.png")}, (default)], [#{image_path("products/fuzzbag/bag-blue-600.png")}, (small)]", alt: "FuzzBag"}
     %h3 Navy
