@@ -100,6 +100,11 @@ section.callouts
       @include make-xs-column(12)
       @include make-sm-column(6)
       padding-top: 20px
+    &.even
+      .pic
+        @include make-sm-column-push(6)
+      .info
+        @include make-sm-column-pull(6)
 section.product-variations
   padding: 40px 0
   background: #fff
