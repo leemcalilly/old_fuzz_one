@@ -1,0 +1,43 @@
+- content_for :title, "T-Shirts | Original Fuzz"
+
+%section.product-header.cable
+  .overlay{style:"background-image: url(#{asset_path('products/shirts/header.png')});"}
+    .container
+      .product-header-title
+        %h1 T-Shirts
+        .callouts
+          Stylish • American Apparel • Screenprints
+        %p Need to look great in a pinch? Grab an Original Fuzz tee! They're made from soft, 100% cotton, and because we use American Apparel, each shirt is guaranteed to be sweatshop free. They're screenprinted with care from the dedicated team at #{ link_to 'Fretto Prints', 'http://hellofretto.com/' } in St. Augustine, FL. Choose from two different styles.
+        %h1 $20
+        %p= link_to "Choose Style", "#shirt-styles", class: "btn btn-primary"
+
+%section.product-gallery
+  .slider
+    %ul.slides
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/1.jpg")}, (default)], [#{image_path("products/shirts/1-640.jpg")}, (small)]", alt: "Cables"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/2.jpg")}, (default)], [#{image_path("products/shirts/2-640.jpg")}, (small)]", alt: "Cables"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/3.jpg")}, (default)], [#{image_path("products/shirts/3-640.jpg")}, (small)]", alt: "Cables"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/4.jpg")}, (default)], [#{image_path("products/shirts/4-640.jpg")}, (small)]", alt: "Cables"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/5.jpg")}, (default)], [#{image_path("products/shirts/5-640.jpg")}, (small)]", alt: "Cables"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/6.jpg")}, (default)], [#{image_path("products/shirts/6-640.jpg")}, (small)]", alt: "Cables"}
+
+%section.product-header#shirt-styles
+  .container
+  .product-header-cable{style: "background-image: url(#{asset_path('products/shirts/letter-shirt.png')});"}
+    .container
+      .info
+        %h3 Letters &amp; Bolt
+        %h1 $25
+        %p= link_to "Add To Cart", "#", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-002"
+  .product-header-cable{style: "background-image: url(#{asset_path('products/shirts/logo-shirt.png')});"}
+    .container
+      .info
+        %h3 Classic Logo
+        %h1 $25
+        %p= link_to "Add To Cart", "#", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"FC-003"
