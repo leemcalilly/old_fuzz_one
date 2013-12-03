@@ -1,0 +1,43 @@
+section.wofford
+  background: #fff image-url("bg-exclusive_paper.png")
+  @include clearfix
+  padding-top: 60px
+  padding-bottom: 60px
+  border-bottom: 1px solid #ccc
+  .wofford-shot
+    @include make-xs-column(12)
+    @include make-sm-column(6)
+    @include make-sm-column-push(6)
+    img
+      width: 100%
+      -webkit-transform: rotate(2deg)
+      transform: rotate(2deg)
+      padding: 10px 10px 60px 10px
+      background: #fff
+      border: 1px solid #ddd
+      -webkit-transform: rotate(-2deg)
+      transform: rotate(-2deg)
+  .wofford-title
+    @include make-xs-column(12)
+    @include make-sm-column(6)
+    @include make-sm-column-pull(6)
+    @media (min-width: $screen-sm)
+      margin-top: 40px
+    h2
+      padding-bottom: 10px
+      border-bottom: 2px solid $brand-primary
+      font-size: 36px
+    .callouts
+      margin-bottom: 10px
+      padding-bottom: 10px
+      font-family: $font-headline
+      font-weight: 700
+      font-size: 14px
+      color: $brand-primary
+      border-bottom: 2px solid $brand-primary
+      text-transform: uppercase
+    p.action
+      margin-top: 20px
+      .btn-primary
+        background: #627aa1
+        border-color: #627aa1
