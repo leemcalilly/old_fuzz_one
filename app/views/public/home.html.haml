@@ -56,3 +56,16 @@
         %p True to your tone. Our cables use high-quality, Japanese cabling with retro connectors. Their perfectly balanced frequency response delivers shimmering highs and earth-shaking lows that stay true to your tone. Like all of our products, each cable comes with a lifetime guarantee.
         %p.action
           = link_to "Learn More", "/products/cables", class: "btn btn-primary"
+
+  %section.product-feature.t-shirts
+    .container
+      .product-feature-shot
+        %a{href:"/products/t-shirts"}
+          = image_tag "home-t-shirts.jpg", alt: "T-Shirts"
+      .product-feature-title
+        %h2= link_to "T-Shirts", "/products/t-shirts"
+        .callouts
+          Stylish • American Apparel • Screenprints
+        %p Need to look great in a pinch? Grab an Original Fuzz tee! They're made from soft, 100% cotton, and because we use American Apparel, each shirt is guaranteed to be sweatshop free. They're screenprinted with care from the dedicated team at #{ link_to 'Fretto Prints', 'http://hellofretto.com/' } in St. Augustine, FL. Choose from two styles.
+        %p.action
+          = link_to "Learn More", "/products/t-shirt", class: "btn btn-primary"
