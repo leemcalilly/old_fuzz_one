@@ -21,6 +21,7 @@ $navbar-default-link-hover-color: lighten($navbar-default-link-color, 10%)
 $navbar-default-toggle-hover-bg: lighten($navbar-default-bg, 10%)
 $navbar-default-toggle-icon-bar-bg: lighten($navbar-default-bg, 20%)
 $navbar-default-toggle-border-color: lighten($navbar-default-bg, 20%)
+$grid-float-breakpoint: 768px
 
 $dropdown-bg: $navbar-default-bg
 $dropdown-link-color: #fff
@@ -38,15 +39,58 @@ header
     font-weight: 700
     font-size: 12px
     letter-spacing: 1px
+    color: #6D737E !important
+  .navbar-collapse.in
+    a
+      padding-top: 4px
+      padding-bottom: 4px
+    p
+      color: white
+      padding-left: 10px
+      margin-top: 10px
+      margin-bottom: 4px
+    .navbar-nav
+      margin: 0
+      &:first-child
+        margin-top: 10px
+      &:last-child
+        margin-bottom: 10px
   .navbar-brand
     position: relative
     width: 153px
   .navbar-brand img
-    margin-top: 5px
+    margin-top: 10px
     margin-right: 20px
-    width: 123px
+    width: 100px
     position: absolute
     top: 0px
+  .shoppingcart
+    margin-top: 24px
+    margin-right: 16px
+    p
+      color: #6D737E
+      font-size: 13px
+      margin: 0
+    #itemcount
+      color: #999
+      background: #6D737E
+      moz-border-radius: 2px
+      border-radius: 2px
+      margin-left: 6px
+      padding-right: 4px
+      padding-left: 4px
+  @media (min-width: $screen-sm)
+    .navbar-brand img
+      margin-top: 5px
+      width: 123px
+    ul.nav
+      li a
+        padding-left: 10px
+        padding-right: 10px
+      li.dropdown
+        ul.dropdown-menu
+          li a
+            padding-right: 100px
 
 section.page-picture
   img
@@ -81,29 +125,75 @@ footer
   a:hover
     color: #ccc
     text-decoration: none
-.footer-about
+  .whitetext
+    color: white
+  .borderwrapper
+    padding: 14px
+    margin-bottom: 12px
+    border: 1px solid #666
+    p
+      // text-transform: uppercase
+      font-size: 14px
+      margin-bottom: 0
+.footer-div1
+  @include make-sm-column(6)
+  @include make-lg-column(4)
+.footer-band-profiles
   @include make-xs-column(12)
-  @include make-sm-column(4)
+  @include make-lg-column(6)
+.footer-fuzz-guide
+  @include make-xs-column(12)
+  @include make-lg-column(6)
+  margin-bottom: 20px
+.footer-logo
+  @include make-xs-column(4)
+  @include make-lg-column(3)
+  @include make-lg-column-offset(1)
+  padding: 0
   margin-bottom: 20px
   img
     opacity: .5
-.footer-dealers
-  margin-top: 20px
+    width: 90px
+    @media (min-width: $screen-sm)
+      width: 100px
+.footer-social
+  @include make-xs-column(8)
+  @include make-lg-column(8)
+  text-align: right
+  @media (min-width: $screen-lg)
+    text-align: center
+  p
+    display: inline-block
+    margin: 14px 8px 0 2px
+    font-size: 22px
+    @media (min-width: $screen-sm)
+      margin: 12px 8px 0 2px
+      font-size: 28px
+.footer-about
+  @include make-xs-column(12)
+  margin-bottom: 20px
+.footer-div2
+  @include make-sm-column(6)
+  @include make-lg-column(8)
 .footer-customer-service
   @include make-xs-column(12)
-  @include make-sm-column(2)
+  @include make-sm-column(6)
+  @include make-lg-column(3)
   margin-bottom: 20px
 .footer-products
   @include make-xs-column(12)
-  @include make-sm-column(2)
+  @include make-sm-column(6)
+  @include make-lg-column(3)
   margin-bottom: 20px
 .footer-company
   @include make-xs-column(12)
-  @include make-sm-column(2)
+  @include make-sm-column(6)
+  @include make-lg-column(3)
   margin-bottom: 20px
-.footer-social
+.footer-dealers
   @include make-xs-column(12)
-  @include make-sm-column(2)
+  @include make-sm-column(6)
+  @include make-lg-column(3)
 
 // headings
 h1, h2

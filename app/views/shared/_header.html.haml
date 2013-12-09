@@ -8,13 +8,32 @@
         %span.icon-bar
       = link_to "/", class: "navbar-brand" do
         = image_tag "logo-invert.svg", alt: "Original Fuzz"
+      .shoppingcart.pull-right.visible-xs
+        %p CART <span id="itemcount">0</span>
     .collapse.navbar-collapse.navbar-ex1-collapse
       %ul.nav.navbar-nav
-        %li= link_to "Peruvian Straps", "/products/peruvian-straps"
-        %li= link_to "Solid Straps", "/products/solid-straps"
-        %li= link_to "Cables", "/products/cables"
-        %li= link_to "Fuzz Bag", "/products/fuzz-bag"
-      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown.hidden-xs
+          %a{ href: '#', class: 'dropdown-toggle', data: { toggle: 'dropdown' } }
+            Products
+            %b.caret
+          %ul.dropdown-menu
+            %li= link_to "Peruvian Straps", "/products/peruvian-straps"
+            %li= link_to "Solid Straps", "/products/solid-straps"
+            %li= link_to "Cables", "/products/cables"
+            %li= link_to "Fuzz Bag", "/products/fuzz-bag"
+            %li= link_to "T-Shirts", "/products/fuzz-bag"
+        %p.visible-xs Products
+        %li.visible-xs= link_to "Peruvian Straps", '#'
+        %li.visible-xs= link_to "Solid Straps", '#'
+        %li.visible-xs= link_to "Cables", '#'
+        %li.visible-xs= link_to "Fuzz Bag", '#'
+        %li.visible-xs= link_to "T-Shirts", '#'
+        %p.visible-xs Company
         %li= link_to "Where To Find Us", "/where-to-find-us"
         %li= link_to "About", "/about"
         %li= link_to "Contact", "/contact"
+      %ul.nav.navbar-nav.navbar-right
+        .shoppingcart.pull-right.hidden-xs
+          %p CART <span id="itemcount">0</span>
+        %p.visible-xs Store
+        %li= link_to "Account", '#'
