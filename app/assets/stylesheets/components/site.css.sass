@@ -16,15 +16,18 @@ $grid-float-breakpoint: 992px
 
 $navbar-default-bg: #313a4c
 $navbar-height: 65px
-$navbar-default-link-color: #ccc
+$navbar-default-link-color: #6D737E
 $navbar-default-link-hover-color: lighten($navbar-default-link-color, 10%)
 $navbar-default-toggle-hover-bg: lighten($navbar-default-bg, 10%)
 $navbar-default-toggle-icon-bar-bg: lighten($navbar-default-bg, 20%)
 $navbar-default-toggle-border-color: lighten($navbar-default-bg, 20%)
+$navbar-default-link-active-color: #fff
 $grid-float-breakpoint: 768px
 
 $dropdown-bg: $navbar-default-bg
-$dropdown-link-color: #fff
+$dropdown-link-color: $navbar-default-link-color
+$dropdown-link-hover-color: $navbar-default-link-active-color
+$dropdown-link-hover-bg: $navbar-default-link-hover-color
 
 @import "bootstrap"
 
@@ -33,28 +36,12 @@ body
   background: $navbar-default-bg
 
 header
+  font-family: $font-headline
   a
-    font-family: $font-headline
     text-transform: uppercase
     font-weight: 700
     font-size: 12px
     letter-spacing: 1px
-    color: #6D737E !important
-  .navbar-collapse.in
-    a
-      padding-top: 4px
-      padding-bottom: 4px
-    p
-      color: white
-      padding-left: 10px
-      margin-top: 10px
-      margin-bottom: 4px
-    .navbar-nav
-      margin: 0
-      &:first-child
-        margin-top: 10px
-      &:last-child
-        margin-bottom: 10px
   .navbar-brand
     position: relative
     width: 153px
@@ -68,6 +55,7 @@ header
     margin-top: 24px
     margin-right: 16px
     p
+      display: inline-block
       color: #6D737E
       font-size: 13px
       margin: 0
@@ -91,6 +79,27 @@ header
         ul.dropdown-menu
           li a
             padding-right: 100px
+            font-weight: 700
+  @media (max-width: $screen-sm)
+    .navbar-collapse
+      max-height: 420px
+      p
+        color: white
+        padding-left: 10px
+        margin-top: 10px
+        margin-bottom: 4px
+      .navbar-nav
+      margin: 0
+      &:first-child
+        margin-top: 10px
+      &:last-child
+        margin-bottom: 10px
+      a
+        padding-top: 4px
+        padding-bottom: 4px
+      a:hover
+        color: white
+        text-decoration: none
 
 section.page-picture
   img
@@ -138,6 +147,7 @@ footer
 .footer-div1
   @include make-sm-column(6)
   @include make-lg-column(4)
+  padding: 0
 .footer-band-profiles
   @include make-xs-column(12)
   @include make-lg-column(6)
@@ -149,10 +159,11 @@ footer
   @include make-xs-column(4)
   @include make-lg-column(3)
   @include make-lg-column-offset(1)
-  padding: 0
   margin-bottom: 20px
+  @media (min-width: $screen-lg)
+    padding: 0
   img
-    opacity: .5
+    color: #888
     width: 90px
     @media (min-width: $screen-sm)
       width: 100px
@@ -175,6 +186,7 @@ footer
 .footer-div2
   @include make-sm-column(6)
   @include make-lg-column(8)
+  padding: 0
 .footer-customer-service
   @include make-xs-column(12)
   @include make-sm-column(6)
