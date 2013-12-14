@@ -56,10 +56,6 @@
     .info
       %h3 Doug Martsch
       %p= link_to "Add to Cart", "http://he2.co/QF4D6X6O3Q8", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add" => "PS-003"
-  .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-cusco.png')});"}
-    .info
-      %h3 Cusco
-      %p{:class => "btn btn-primary"} Sold Out
   .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-gray.png')});"}
     .info
       %h3 Gray Stripes
@@ -72,10 +68,6 @@
     .info
       %h3 Rust Stripes
       %p= link_to "Add to Cart", "http://he2.co/HD3D6X6O3Q8", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add" => "PS-006"
-  .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-purple.png')});"}
-    .info
-      %h3 Purple Stripes
-      %p{:class => "btn btn-primary"} Sold Out
   .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-pink.png')});"}
     .info
       %h3 Salmon Stripes
@@ -83,4 +75,15 @@
   .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-orange.png')});"}
     .info
       %h3 Orange Stripes
-      %p{:class => "btn btn-primary"} Sold Out
+      %p
+        %span{:class => "btn btn-primary"} Sold Out
+  .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-purple.png')});"}
+    .info
+      %h3 Purple Stripes
+      %p
+        %span{:class => "btn btn-primary"} Sold Out
+  .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-cusco.png')});"}
+    .info
+      %h3 Cusco
+      %p
+        %span{:class => "btn btn-primary"} Sold Out
