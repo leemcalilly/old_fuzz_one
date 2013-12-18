@@ -48,10 +48,6 @@
     .info
       %h3 Dick Dale
       %p= link_to "Add to Cart", "http://he2.co/AK5H7B8U9E2", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add"=>"PS-001"
-  .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-kurt_vile.png')});"}
-    .info
-      %h3 Kurt Vile
-      %p= link_to "Add to Cart", "http://he2.co/VD7P0T4S7I4", class: "btn btn-primary", "data-cart-show"=>"1", "data-cart-add" => "PS-002"
   .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-gray.png')});"}
     .info
       %h3 Gray Stripes
@@ -86,5 +82,10 @@
   .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-cusco.png')});"}
     .info
       %h3 Cusco
+      %p
+        %span{:class => "btn btn-primary"} Sold Out
+  .product-variation{style:"background-image: url(#{asset_path('products/peruvian/strap-kurt_vile.png')});"}
+    .info
+      %h3 Kurt Vile
       %p
         %span{:class => "btn btn-primary"} Sold Out
