@@ -1,6 +1,6 @@
 - content_for :title, "T-Shirts | Original Fuzz"
 
-%section.product-header.cable
+%section.product-header
   .overlay{style:"background-image: url(#{asset_path('products/shirts/header.png')});"}
     .container
       .product-header-title
@@ -25,14 +25,16 @@
       %li.slide
         %img{"data-interchange"=>"[#{image_path("products/shirts/5.jpg")}, (default)], [#{image_path("products/shirts/5-640.jpg")}, (small)]", alt: "Cables"}
       %li.slide
-        %img{"data-interchange"=>"[#{image_path("products/shirts/6.jpg")}, (default)], [#{image_path("products/shirts/6-640.jpg")}, (small)]", alt: "Cables"}              
-              
+        %img{"data-interchange"=>"[#{image_path("products/shirts/6.jpg")}, (default)], [#{image_path("products/shirts/6-640.jpg")}, (small)]", alt: "Cables"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/shirts/7.jpg")}, (default)], [#{image_path("products/shirts/7-640.jpg")}, (small)]", alt: "Cables"}
+
 %section#shirt-styles
   .container
     %h2 Shirt Styles
-  .container
-  .product-header-cable{style: "background-image: url(#{asset_path('products/shirts/letters-and-bolt.png')});"}
-    .container
+    .product-shirt
+      .product-image
+        = image_tag "products/shirts/letters-and-bolt.png", alt: "Letters & Bolt"
       .info
         %h3 Letters &amp; Bolt
         %h1 $25
@@ -42,8 +44,9 @@
           #{link_to "Medium", "http://he2.co/PB6S3S6G0M6", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"TS-006"}
           #{link_to "Large", "http://he2.co/FW5O2O4K4E2", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"TS-007"}
           #{link_to "XL", "http://he2.co/VB4U1U2Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"TS-008"}
-  .product-header-cable{style: "background-image: url(#{asset_path('products/shirts/classic-logo.png')});"}
-    .container
+    .product-shirt
+      .product-image
+        = image_tag "products/shirts/classic-logo.png", alt: "Classic Logo"
       .info
         %h3 Classic Logo
         %h1 $25
