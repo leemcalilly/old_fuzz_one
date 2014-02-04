@@ -66,6 +66,9 @@ OriginalFuzz::Application.routes.draw do
   get 'collections/guitar-straps/*remainder', to: redirect {|p, req| "/products/#{p[:remainder].match(/peruvian/) ? 'peruvian' : 'solid'}-straps" }
   get 'collections/bags', to: redirect('/products/fuzz-bag')
   get 'collections/cables', to: redirect('/products/cables')
+  
+  get '/pages/peruvian-guitar-strap-pre-sale', to: redirect('/products/peruvian-straps')
 
   get 'blogs/fuzz(/*post)' => 'blog#proxy', post: ''
+  
 end
