@@ -57,12 +57,6 @@
   /    %ul
   /      %li= link_to "[NAMM Logo Here]", "http://www.namm.org"
   /      %li= link_to "[Secure Shopping With Stripe Logo Here]", "https://stripe.com/us/features#seamless-security"
-  
-= render "shared/tracking_codes"
-= javascript_include_tag "foundation.min"
-= javascript_include_tag "foundation.interchange"
-:javascript
-  $j(document).foundation();
 :javascript
   var _emv = _emv || [];
   _emv['campaign'] = '5318b223809c91abf9000005';
@@ -73,4 +67,8 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
   })();
   
-  
+= render "shared/tracking_codes"
+= javascript_include_tag "foundation.min"
+= javascript_include_tag "foundation.interchange"
+:javascript
+  $j(document).foundation();
