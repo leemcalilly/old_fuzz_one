@@ -63,3 +63,12 @@
 = javascript_include_tag "foundation.interchange"
 :javascript
   $j(document).foundation();
+:javascript
+  var _emv = _emv || [];
+  _emv['campaign'] = '5318b223809c91abf9000005';
+
+  (function() {
+      var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+      em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.app.exitmonitor.com/em.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+  })();
