@@ -1,5 +1,7 @@
-= render "shared/head"
-%body
-  = render "shared/header"
-  = yield
-  = render "shared/footer"
+!!! 5
+%html
+  = render "shared/head"
+  %body
+    = render "shared/header"
+    = yield
+    = render "shared/footer"
