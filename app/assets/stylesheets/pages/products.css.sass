@@ -169,3 +169,26 @@ section#shirt-styles
     .info
       @include make-xs-column(12)
       @include make-sm-column(6)
+
+section#skinny-strap-styles
+  padding: 40px 0
+  background: #fff image-url("bg-exclusive_paper.png")
+  h2
+    margin-bottom: 40px
+    padding-bottom: 20px
+    border-bottom: 2px solid $text-color
+  .product-skinny
+    @include make-row
+    margin-bottom: 40px
+    .product-image
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      text-align: left
+      img
+        width: 100%
+      @media (min-width: $screen-sm)
+        img
+          width: auto
+    .info
+      @include make-xs-column(12)
+      @include make-sm-column(6)

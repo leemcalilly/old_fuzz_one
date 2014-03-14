@@ -1,0 +1,97 @@
+- content_for :title, "The Skinny Leather Guitar Strap | Original Fuzz"
+
+%section.product-header
+  .overlay{style:"background-image: url(#{asset_path('products/skinny/header.png')});"}
+    .container
+      .product-header-title
+        %h1 The Skinny Leather Strap
+        .callouts
+          Simple • Stylish • Made in USA
+        %p We made this skinny leather strap because sometimes you need an elegant way to hold your guitar. We use full-grain #{ link_to 'Horween', 'http://horween.com' } leather. You'll recognize the difference. Horween makes some of the finest leather in the world. Like a belt, this strap comes in preset sizes&#8212;short, medium, and long. Each size has three adjustable lengths and comes in brown, tan, blue, or black. Even better, this strap is made right here in the USA.
+        %h1 $48
+        %p= link_to "Choose Style", "#skinny-strap-styles", class: "btn btn-primary"
+
+%section.product-gallery
+  .slider
+    %ul.slides
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/1.jpg")}, (default)], [#{image_path("products/skinny/1-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/2.jpg")}, (default)], [#{image_path("products/skinny/2-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/3.jpg")}, (default)], [#{image_path("products/skinny/3-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/4.jpg")}, (default)], [#{image_path("products/skinny/4-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/5.jpg")}, (default)], [#{image_path("products/skinny/5-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/6.jpg")}, (default)], [#{image_path("products/skinny/6-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+      %li.slide
+        %img{"data-interchange"=>"[#{image_path("products/skinny/7.jpg")}, (default)], [#{image_path("products/skinny/7-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
+
+%section.product-points
+  .container
+    .product-point
+      .product-point-info
+        %h3 Tailored to You
+        %p We wanted to make the simplest leather guitar strap possible, so we cut out all the extra loops and leather. You simply pick the size that fits you. Each size has three adjustable lengths. Most people will need a medium. We recommend buying a long strap if you're over 6' tall or like your guitar to hang low. The short size is perfect for shorter people, teens, and children.
+    .product-point
+      .product-point-info
+        %h3 Four Sweet Colors
+        %p Choose a color that highlights your instrument. The black strap would look killer with a black Rickenbacker bass. The brown will match any acoustic. The tan would look perfect with a sunburst Jaguar. And try the blue with a surf green Stratocaster. Between these four colors, we've got a lineup of straps that will fit any guitar or any occasion.
+    .product-point
+      .product-point-info
+        %h3 Horween Leather
+        %p #{ link_to 'Horween', 'http://horween.com' } leather is made in Chicago, IL. Ask any leather buff you know and they'll tell you about how Horween has been making some of the finest leathers in America since 1905. It's soft, full-grain leather that will feel great on your shoulder. You might be surprised at how comfortable this strap is. Just because it's skinny doesn't mean it won't feel great with your guitar.
+    .product-point
+      .product-point-info
+        %h3 Made in the USA
+        %p Every material and hour of labor that went into making this guitar strap is 100% USA&#8212;from the leather to the die cut to the logo stamp. It was cut and finished by our leather artisan in Wyoming. America is known for making quality, rugged leather products since our early days as a nation, and this guitar strap carries on that fine tradition.
+
+%section#skinny-strap-styles
+  .container
+    %h2 Skinny Leather Styles
+    .product-skinny
+      .product-image
+        = image_tag "products/shirts/letters-and-bolt.png", alt: "Brown"
+      .info
+        %h3 Brown
+        %h1 $48
+        %h4 Choose a Size:
+        %p
+          #{link_to "Short", "http://he2.co/GF0L6I9Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-001"}
+          #{link_to "Medium", "http://he2.co/FT5L2I1K4E2", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-002"}
+          #{link_to "Long", "http://he2.co/VI4B1I9Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-003"}
+    .product-skinny
+      .product-image
+        = image_tag "products/shirts/letters-and-bolt.png", alt: "Tan"
+      .info
+        %h3 Black
+        %h1 $48
+        %h4 Choose a Size:
+        %p
+          #{link_to "Short", "http://he2.co/LT3N0U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-004"}
+          #{link_to "Medium", "http://he2.co/BY2D9Q5M6A0", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-005"}
+          #{link_to "Long", "http://he2.co/RT1Z8M3G0M6", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-006"}
+    .product-skinny
+      .product-image
+        = image_tag "products/shirts/letters-and-bolt.png", alt: "Black"
+      .info
+        %h3 Tan
+        %h1 $48
+        %h4 Choose a Size:
+        %p
+          #{link_to "Short", "http://he2.co/HO0V7I1K4E2", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-007"}
+          #{link_to "Medium", "http://he2.co/SK9X5U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-008"}
+          #{link_to "Long", "http://he2.co/IF8T4Q5M6A0", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-009"}
+    .product-skinny
+      .product-image
+        = image_tag "products/shirts/letters-and-bolt.png", alt: "Blue"
+      .info
+        %h3 Blue
+        %h1 $48
+        %h4 Choose a Size:
+        %p
+          #{link_to "Short", "http://he2.co/MG3B1I9Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-010"}
+          #{link_to "Medium", "http://he2.co/CR2N0U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-011"}
+          #{link_to "Long", "http://he2.co/SW1D9Q5M6A0", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-012"}
