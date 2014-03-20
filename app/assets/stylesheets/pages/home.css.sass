@@ -62,6 +62,19 @@ section.product-feature
   padding-top: 60px
   padding-bottom: 60px
   border-bottom: 1px solid #ccc
+  &.skinny
+    .product-feature-shot
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-push(6)
+      img
+        width: 100%
+        -webkit-transform: rotate(2deg)
+        transform: rotate(2deg)
+    .product-feature-title
+      @include make-xs-column(12)
+      @include make-sm-column(6)
+      @include make-sm-column-pull(6)
   &.peruvian
     .product-feature-shot
       @include make-xs-column(12)

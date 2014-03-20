@@ -3,17 +3,30 @@
 %section.brand-feature
   .brand-title
     = image_tag "type-home.png", alt: "Original Fuzz"
-
+    
 %section.product-features
+  %section.product-feature.skinny
+    .container
+      .product-feature-shot
+        %a{href:"/products/peruvian-straps"}
+          = image_tag "home-skinny.jpg", alt: "Skinny Leather Guitar Straps"
+      .product-feature-title
+        %h2= link_to "Skinny Leather Straps", "/products/skinny-leather-guitar-strap"
+        .callouts
+          Stylish • Simply • Made in USA
+        %p We've made the sleekest guitar strap imaginable with this strap. There are no adjustable loops or extra features. Just full-grain Horween leather in four gorgeous colors. Choose black, brown, tan, or blue. This strap gets out of the way and lets your instrument shine.
+        %p.action
+          = link_to "Learn More", "/products/skinny-leather-guitar-strap", class: "btn btn-primary"
+
   %section.product-feature.peruvian
     .container
       .product-feature-shot
         %a{href:"/products/peruvian-straps"}
-          = image_tag "home-peruvian.jpg", alt: "Peruvian Straps"
+          = image_tag "home-peruvian.jpg", alt: "The Peruvian Guitar Strap"
       .product-feature-title
         %h2= link_to "Peruvian Straps", "/products/peruvian-straps"
         .callouts
-          Handwoven • Unique • Made In Peru • Responsibly-Sourced
+          Handwoven • Unique • Made in Peru • Responsibly-Sourced
         %p The fabric for these straps is handwoven according to fair-trade guidelines in Peru. Each strap is as unique as the artisan that made it. Built with top-grain leather and antique-style hardware, these are some of the most beautiful guitar straps in the world.
         %p.action
           = link_to "Learn More", "/products/peruvian-straps", class: "btn btn-primary"
@@ -22,7 +35,7 @@
     .container
       .product-feature-shot
         %a{href:"/products/solid-straps"}
-          = image_tag "home-solid.jpg", alt: "Solid Straps"
+          = image_tag "home-solid.jpg", alt: "The Solid Guitar Strap"
       .product-feature-title
         %h2= link_to "Solid Straps", "/products/solid-straps"
         .callouts
@@ -35,7 +48,7 @@
     .container
       .product-feature-shot
         %a{href:"/products/fuzz-bag"}
-          = image_tag "home-bags.jpg", alt: "Fuzz Bag"
+          = image_tag "home-bags.jpg", alt: "The Fuzz Gear Bag for Guitar Players"
       .product-feature-title
         %h2= link_to "Fuzz Bag", "/products/fuzz-bag"
         .callouts
@@ -48,7 +61,7 @@
     .container
       .product-feature-shot
         %a{href:"/products/cables"}
-          = image_tag "home-cables.jpg", alt: "Cables"
+          = image_tag "home-cables.jpg", alt: "Fuzz Instrument and Microphone Cables"
       .product-feature-title
         %h2= link_to "Cables", "/products/cables"
         .callouts
@@ -61,7 +74,7 @@
     .container
       .product-feature-shot
         %a{href:"/products/t-shirts"}
-          = image_tag "home-t-shirts.jpg", alt: "T-Shirts"
+          = image_tag "home-t-shirts.jpg", alt: "Fuzz T-Shirts"
       .product-feature-title
         %h2= link_to "T-Shirts", "/products/t-shirts"
         .callouts
