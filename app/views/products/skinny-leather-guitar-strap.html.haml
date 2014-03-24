@@ -7,9 +7,9 @@
         %h1 The Skinny Leather Strap
         .callouts
           Simple • Stylish • Made in USA
-        %p We made this skinny leather strap because sometimes you need an elegant way to hold your guitar. We use full-grain #{ link_to 'Horween', 'http://horween.com' } leather. You'll recognize the difference. Horween makes some of the finest leather in the world. Like a belt, this strap comes in preset sizes&#8212;short, medium, and long. Each size has three adjustable lengths and comes in brown, tan, blue, or black. Even better, this strap is made right here in the USA.
+        %p We made this strap because we needed a simple, elegant way to hold our guitar up. No frills, just full-grain #{ link_to 'Horween', 'http://horween.com' } leather. You'll recognize the difference. Like a belt, this strap comes in preset sizes&#8212;short, medium, and long. Each size has three adjustable lengths and comes in four colors.
         %h1 $48
-        %p= link_to "Choose Style", "#skinny-strap-styles", class: "btn btn-primary"
+        %p= link_to "Choose Style", "#skinny", class: "btn btn-primary"
 
 %section.product-gallery
   .slider
@@ -26,8 +26,6 @@
         %img{"data-interchange"=>"[#{image_path("products/skinny/5.jpg")}, (default)], [#{image_path("products/skinny/5-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
       %li.slide
         %img{"data-interchange"=>"[#{image_path("products/skinny/6.jpg")}, (default)], [#{image_path("products/skinny/6-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
-      %li.slide
-        %img{"data-interchange"=>"[#{image_path("products/skinny/7.jpg")}, (default)], [#{image_path("products/skinny/7-640.jpg")}, (small)]", alt: "Skinny leather guitar strap"}
 
 %section.product-points
   .container
@@ -48,50 +46,52 @@
         %h3 Made in the USA
         %p Every material and hour of labor that went into making this guitar strap is 100% USA&#8212;from the leather to the die cut to the logo stamp. It was cut and finished by our leather artisan in Wyoming. America is known for making quality, rugged leather products since our early days as a nation, and this guitar strap carries on that fine tradition.
 
-%section#skinny-strap-styles
+%section.product-header#skinny
   .container
-    %h2 Skinny Leather Styles
-    .product-skinny
-      .product-image
-        = image_tag "products/shirts/letters-and-bolt.png", alt: "Brown"
+    %h2 Skinny Strap Styles
+  .product-header-cable{style: "background-image: url(#{asset_path('products/skinny/brown.png')});"}
+    .container
       .info
         %h3 Brown
+        %p Classic brown. 100% full-grain leather by Horween. Choose from 3 sizes&#8212;short, medium, &amp; long. Medium is great for most people that hold a Stratocaster at their waist. Made in the USA.
         %h1 $48
         %h4 Choose a Size:
         %p
           #{link_to "Short", "http://he2.co/GF0L6I9Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-001"}
           #{link_to "Medium", "http://he2.co/FT5L2I1K4E2", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-002"}
           #{link_to "Long", "http://he2.co/VI4B1I9Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-003"}
-    .product-skinny
-      .product-image
-        = image_tag "products/shirts/letters-and-bolt.png", alt: "Tan"
-      .info
-        %h3 Black
-        %h1 $48
-        %h4 Choose a Size:
-        %p
-          #{link_to "Short", "http://he2.co/LT3N0U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-004"}
-          #{link_to "Medium", "http://he2.co/BY2D9Q5M6A0", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-005"}
-          #{link_to "Long", "http://he2.co/RT1Z8M3G0M6", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-006"}
-    .product-skinny
-      .product-image
-        = image_tag "products/shirts/letters-and-bolt.png", alt: "Black"
+  .product-header-cable{style: "background-image: url(#{asset_path('products/skinny/tan.png')});"}
+    .container
       .info
         %h3 Tan
+        %p Desert tan. 100% full-grain leather by Horween. Choose from 3 sizes&#8212;short, medium, &amp; long. Medium is great for most people that hold a Stratocaster at their waist. Made in the USA.
+        %p 25' XLR microphone cable
         %h1 $48
         %h4 Choose a Size:
         %p
           #{link_to "Short", "http://he2.co/HO0V7I1K4E2", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-007"}
           #{link_to "Medium", "http://he2.co/SK9X5U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-008"}
           #{link_to "Long", "http://he2.co/IF8T4Q5M6A0", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-009"}
-    .product-skinny
-      .product-image
-        = image_tag "products/shirts/letters-and-bolt.png", alt: "Blue"
+  .product-header-cable{style: "background-image: url(#{asset_path('products/skinny/blue.png')});"}
+    .container
       .info
         %h3 Blue
+        %p Chalk blue. 100% full-grain leather by Horween. Choose from 3 sizes&#8212;short, medium, &amp; long. Medium is great for most people that hold a Stratocaster at their waist. Made in the USA.
+        %p 15' right angle 1/4" instrument cable
         %h1 $48
         %h4 Choose a Size:
         %p
           #{link_to "Short", "http://he2.co/MG3B1I9Y8Q8", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-010"}
           #{link_to "Medium", "http://he2.co/CR2N0U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-011"}
           #{link_to "Long", "http://he2.co/RE6X5U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-012"}
+  .product-header-cable{style: "background-image: url(#{asset_path('products/skinny/black.png')});"}
+    .container
+      .info
+        %h3 Black
+        %p Matte black. 100% full-grain leather by Horween. Choose from 3 sizes&#8212;short, medium, &amp; long. Medium is great for most people that hold a Stratocaster at their waist. Made in the USA.
+        %h1 $48
+        %h4 Choose a Size:
+        %p
+          #{link_to "Short", "http://he2.co/LT3N0U7I2I4", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-004"}
+          #{link_to "Medium", "http://he2.co/BY2D9Q5M6A0", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-005"}
+          #{link_to "Long", "http://he2.co/RT1Z8M3G0M6", class: "btn btn-primary btn-small", "data-cart-show"=>"1", "data-cart-add"=>"SL-006"}
